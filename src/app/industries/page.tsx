@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ContactSection } from "@/components/sections/contact-section";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,27 +16,29 @@ export default function IndustriesPage() {
         {
             title: "Government",
             icon: Building2,
-            desc: "NanTech provides comprehensive IT support for government agencies, focusing on secure infrastructure management, cybersecurity, and efficient public service platforms. We help streamline operations, enhance data security, and ensure compliance, empowering government bodies to serve citizens effectively in the digital age."
+            desc: "NanTech supports government agencies in modernizing systems that serve the public good. We deliver secure, scalable software solutions and provide disciplined program leadership to improve service delivery, data integrity, and operational efficiency. Our approach emphasizes accessibility, transparency, and trust—helping agencies responsibly adopt technology and AI to better serve citizens and communities."
         },
         {
             title: "Healthcare",
             icon: Stethoscope,
-            desc: "NanTech provides specialized IT support for the healthcare industry, offering secure and efficient solutions tailored to meet the unique challenges of healthcare providers. From managing electronic health records (EHR) to ensuring compliance with industry regulations, we help healthcare organizations enhance patient care and streamline operations with cutting-edge technology."
+            desc: "NanTech partners with healthcare organizations to strengthen digital systems that support care, compliance, and outcomes. We design software solutions and data platforms that improve information flow, operational efficiency, and decision-making. Guided by human-centered and ethical technology principles, we help healthcare providers adopt AI and analytics responsibly while keeping patient trust and safety at the core."
         },
         {
             title: "Retail & E-Commerce",
             icon: ShoppingBag,
-            desc: "NanTech delivers tailored IT solutions for the retail and e-commerce industry, optimizing online platforms, enhancing customer experiences, and managing supply chains efficiently. We help businesses stay competitive by integrating cutting-edge technology to drive sales, improve operations, and secure customer data."
+            desc: "NanTech helps retail and e-commerce organizations build intelligent, scalable digital platforms that adapt to changing customer needs. Through software development, data-driven insights, and delivery leadership, we enable smarter operations, improved customer experiences, and responsible use of AI to drive sustainable growth in a competitive digital marketplace."
         },
         {
             title: "Education",
             icon: GraduationCap,
-            desc: "NanTech supports the education sector with innovative IT solutions, including e-learning platforms, secure data management, and advanced student information systems. We empower educational institutions to enhance learning experiences, streamline administration, and ensure data security in an increasingly digital world."
+            desc: "Education is central to NanTech’s mission. We work with schools, institutions, and learning organizations to design technology that expands access, builds confidence, and supports lifelong learning. Drawing from our work on platforms like MathPi and TrainPi, we develop digital learning tools, data systems, and AI-enabled solutions that enhance instruction, streamline administration, and empower learners and educators alike."
         }
     ];
 
     return (
         <div className="flex flex-col min-h-screen">
+
+
             <section className="pt-32 pb-20">
                 <div className="container mx-auto px-6">
                     <motion.div
@@ -47,9 +50,19 @@ export default function IndustriesPage() {
                         <h1 className="text-5xl md:text-7xl font-bold mb-6">
                             IT Solutions for <span className="text-gradient-primary">Your Business</span>
                         </h1>
-                        <p className="text-xl text-muted-foreground">
-                            Specialized expertise across key sectors to drive innovation and efficiency.
+                        <p className="text-xl text-muted-foreground mb-12">
+                            NanTech partners with organizations across sectors to design and deliver technology solutions that expand access, build capability, and create lasting impact. Our work bridges software development, program delivery, and responsible AI, informed by our experience building purpose-driven platforms such as MathPi and TrainPi.
                         </p>
+
+                        <motion.div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                            <Image
+                                src="/images/industries-banner.jpg"
+                                alt="Industries Served"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </motion.div>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

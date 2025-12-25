@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ContactSection } from "@/components/sections/contact-section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,6 +28,8 @@ export default function AboutPage() {
 
     return (
         <div className="flex flex-col min-h-screen">
+
+
             {/* Hero / Header */}
             <section className="pt-32 pb-20 relative overflow-hidden">
                 <div className="container mx-auto px-6">
@@ -34,14 +37,24 @@ export default function AboutPage() {
                         initial="hidden"
                         animate="visible"
                         variants={containerVariants}
-                        className="max-w-4xl"
+                        className="max-w-4xl mx-auto text-center"
                     >
                         <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6">
                             About <span className="text-gradient-primary">NanTech</span>
                         </motion.h1>
-                        <motion.p variants={itemVariants} className="text-xl text-muted-foreground leading-relaxed">
+                        <motion.p variants={itemVariants} className="text-xl text-muted-foreground leading-relaxed mb-12">
                             Nantech is a woman-owned, minority-owned company, a Small Disadvantaged Business (SDB), and a HUBZone Business dedicated to delivering innovative solutions.
                         </motion.p>
+
+                        <motion.div variants={itemVariants} className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                            <Image
+                                src="/images/about-us.jpg"
+                                alt="About NanTech"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </motion.div>
                     </motion.div>
                 </div>
                 <div className="absolute right-0 top-0 w-1/3 h-full bg-primary/5 blur-3xl -z-10" />
@@ -82,11 +95,11 @@ export default function AboutPage() {
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-primary" />
-                                        <span>Woman-Owned Small Business</span>
+                                        <span>Woman-Owned Small Business #834882</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-primary" />
-                                        <span>Minority-Owned Business</span>
+                                        <span>Minority-Owned Business #834882</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -95,6 +108,14 @@ export default function AboutPage() {
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-primary" />
                                         <span>HUBZone Business</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                                        <span>PMP Certification #1877847</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                                        <span>CSM (Scrum Master) #924516</span>
                                     </div>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Cloud, Lock, Server, Cpu, HeartHandshake, ShieldCheck } from "lucide-react";
+import { ArrowRight, Code, Briefcase, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactSection } from "@/components/sections/contact-section";
@@ -25,12 +25,27 @@ export default function Home() {
   };
 
   const services = [
-    { title: "Cloud Solutions", icon: Cloud, desc: "Our cloud solutions are designed to enhance your business operations by providing scalable and secure cloud infrastructure. Whether you need to migrate to the cloud or optimize your existing cloud environment, we have the expertise to make it happen.", linkText: "Explore More", image: "/images/service-1.png" },
-    { title: "Managed IT Services", icon: Server, desc: "With our managed IT services, you can offload the burden of IT management and maintenance, allowing your internal teams to focus on strategic initiatives. We proactively monitor, manage, and support your IT environment to keep your business running smoothly.", linkText: "Discover More", image: "/images/service-2.png" },
-    { title: "Disaster Recovery", icon: ShieldCheck, desc: "Our disaster recovery solutions ensure that your critical data and systems are protected and recoverable in the event of a disaster. We help you develop robust recovery strategies to minimize downtime and keep your business operational.", linkText: "Learn More", image: "/images/service-3.png" },
-    { title: "Cloud Desktop", icon: Cpu, desc: "Empower your workforce with our cloud desktop solutions that enable secure and flexible remote access to essential business applications and data. Experience the freedom of working from anywhere while maintaining the highest level of security.", linkText: "Get Started", image: "/images/service-cloud-desktop-v2.png" },
-    { title: "Network Solutions", icon: Lock, desc: "Our network solutions are designed to optimize your network infrastructure for superior performance, reliability, and security. Whether you need network design, implementation, or optimization, we have the expertise to meet your networking needs.", linkText: "Explore Solutions", image: "/images/service-network-v3.png" },
-    { title: "Support Consulting", icon: HeartHandshake, desc: "Our support consulting services provide you with expert guidance and support to address your IT challenges and enhance your technology investments. We work closely with you to develop customized IT strategies that align with your business goals.", linkText: "Get Consultation", image: "/images/service-support.png" }
+    {
+      title: "Software Development",
+      icon: Code,
+      desc: "We design and build secure, scalable software solutions tailored to your organization’s needs. From custom applications and platforms to system modernization and integrations, we focus on clean architecture, user-centered design, and long-term maintainability.",
+      linkText: "Explore More",
+      image: "/images/service-software.jpg"
+    },
+    {
+      title: "Project & Program Management",
+      icon: Briefcase,
+      desc: "We provide hands-on leadership to plan, execute, and deliver complex technology initiatives. Using Agile and hybrid delivery models, we align stakeholders, manage risk, and ensure projects stay on track—bridging technical teams with business goals.",
+      linkText: "Discover More",
+      image: "/images/service-project-management.jpg"
+    },
+    {
+      title: "AI Consulting",
+      icon: Brain,
+      desc: "We help organizations apply AI in practical, ethical, and impactful ways. From AI strategy and readiness assessments to intelligent automation and data-driven insights, we guide teams in adopting AI solutions that are responsible, transparent, and scalable.",
+      linkText: "Innovate Now",
+      image: "/images/service-ai-consulting.jpg"
+    }
   ];
 
   return (
@@ -66,8 +81,11 @@ export default function Home() {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
             >
-              NanTech is a leading IT and AI consulting firm dedicated to transforming businesses with innovative technology solutions. We offer customized services in IT infrastructure management, cloud solutions, AI-driven analytics, and cybersecurity, empowering organizations to thrive in the digital age.
-            </motion.p>
+              NanTech is a mission-driven IT and AI consulting firm focused on software
+              development, project and program management, and AI-powered solutions. We
+              help organizations translate ideas into execution by combining technical expertise,
+              disciplined delivery, and responsible AI—empowering teams, educators, and
+              communities to thrive in the digital age.            </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
               <Link href="/about">
@@ -86,10 +104,10 @@ export default function Home() {
             className="mt-16 relative w-full max-w-5xl mx-auto aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl"
           >
             <Image
-              src="/images/hero-visual.png"
+              src="/images/hero-banner.jpg"
               alt="NanTech Dashboard"
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
@@ -158,24 +176,27 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Choose <span className="text-primary">NanTech</span> IT Services?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Choose <span className="text-primary">NanTech</span>?</h2>
+              <p className="text-muted-foreground mb-8 text-lg">
+                NanTech is not a traditional IT vendor. We are a strategic technology partner focused on building, delivering, and scaling intelligent solutions with purpose and precision.
+              </p>
 
               <div className="space-y-8 mt-8">
                 {[
                   {
                     id: "01",
-                    title: "Customized Solutions",
-                    desc: "We tailor our IT services to meet the unique needs of your business, ensuring that our solutions align perfectly with your goals and challenges."
+                    title: "Purpose-Driven, Customized Solutions",
+                    desc: "We don’t offer one-size-fits-all services. Every engagement is tailored to your goals, constraints, and stakeholders—ensuring technology solutions are practical, scalable, and aligned with real-world impact."
                   },
                   {
                     id: "02",
-                    title: "Expertise and Innovation",
-                    desc: "With a team of seasoned professionals and a focus on cutting-edge technology, NanTech delivers forward-thinking solutions that keep your business ahead in the digital age."
+                    title: "Execution Excellence & Innovation",
+                    desc: "We combine disciplined project and program management with modern software and AI expertise. Our approach bridges strategy and execution—so ideas don’t just stay on paper, they get delivered."
                   },
                   {
                     id: "03",
-                    title: "Comprehensive Support",
-                    desc: "From infrastructure management to cybersecurity, we provide end-to-end IT services, ensuring your operations run smoothly and securely, allowing you to focus on growth."
+                    title: "Responsible & Human-Centered Technology",
+                    desc: "Innovation matters, but responsibility matters more. We design and implement software and AI solutions that are ethical, transparent, and people-first—supporting long-term trust, adoption, and sustainability."
                   }
                 ].map((item) => (
                   <div key={item.id} className="flex gap-4">

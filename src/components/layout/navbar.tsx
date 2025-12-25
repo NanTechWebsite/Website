@@ -38,9 +38,21 @@ export function Navbar() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative w-[140px] h-[50px]">
+                    {/* Desktop Logo */}
+                    <div className="relative hidden md:block w-[160px] h-[60px]">
                         <Image
-                            src="/logo.png"
+                            src="/big-logo.jpg"
+                            alt="NanTech"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+
+                    {/* Mobile Logo */}
+                    <div className="relative block md:hidden w-[120px] h-[50px]">
+                        <Image
+                            src="/small-logo.jpg"
                             alt="NanTech"
                             fill
                             className="object-contain"

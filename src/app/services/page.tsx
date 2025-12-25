@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ContactSection } from "@/components/sections/contact-section";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Cloud, Lock, Server, Cpu, HeartHandshake, ShieldCheck } from "lucide-react";
+import { ArrowRight, Code, Briefcase, Brain } from "lucide-react";
 
 export default function ServicesPage() {
     const containerVariants = {
@@ -12,12 +12,24 @@ export default function ServicesPage() {
     };
 
     const services = [
-        { title: "Cloud Solutions", icon: Cloud, desc: "Our cloud solutions are designed to enhance your business operations by providing scalable and secure cloud infrastructure. Whether you need to migrate to the cloud or optimize your existing cloud environment, we have the expertise to make it happen.", linkText: "Explore More" },
-        { title: "Managed IT Services", icon: Server, desc: "With our managed IT services, you can offload the burden of IT management and maintenance, allowing your internal teams to focus on strategic initiatives. We proactively monitor, manage, and support your IT environment to keep your business running smoothly.", linkText: "Discover More" },
-        { title: "Disaster Recovery", icon: ShieldCheck, desc: "Our disaster recovery solutions ensure that your critical data and systems are protected and recoverable in the event of a disaster. We help you develop robust recovery strategies to minimize downtime and keep your business operational.", linkText: "Learn More" },
-        { title: "Cloud Desktop", icon: Cpu, desc: "Empower your workforce with our cloud desktop solutions that enable secure and flexible remote access to essential business applications and data. Experience the freedom of working from anywhere while maintaining the highest level of security.", linkText: "Get Started" },
-        { title: "Network Solutions", icon: Lock, desc: "Our network solutions are designed to optimize your network infrastructure for superior performance, reliability, and security. Whether you need network design, implementation, or optimization, we have the expertise to meet your networking needs.", linkText: "Explore Solutions" },
-        { title: "Support Consulting", icon: HeartHandshake, desc: "Our support consulting services provide you with expert guidance and support to address your IT challenges and enhance your technology investments. We work closely with you to develop customized IT strategies that align with your business goals.", linkText: "Get Consultation" },
+        {
+            title: "Software Development",
+            icon: Code,
+            desc: "We design and build secure, scalable software solutions tailored to your organization’s needs. From custom applications and platforms to system modernization and integrations, we focus on clean architecture, user-centered design, and long-term maintainability.",
+            linkText: "Explore More"
+        },
+        {
+            title: "Project & Program Management",
+            icon: Briefcase,
+            desc: "We provide hands-on leadership to plan, execute, and deliver complex technology initiatives. Using Agile and hybrid delivery models, we align stakeholders, manage risk, and ensure projects stay on track—bridging technical teams with business goals.",
+            linkText: "Discover More"
+        },
+        {
+            title: "AI Consulting",
+            icon: Brain,
+            desc: "We help organizations apply AI in practical, ethical, and impactful ways. From AI strategy and readiness assessments to intelligent automation and data-driven insights, we guide teams in adopting AI solutions that are responsible, transparent, and scalable.",
+            linkText: "Innovate Now"
+        }
     ];
 
     return (
@@ -34,8 +46,9 @@ export default function ServicesPage() {
                             Our Comprehensive <span className="text-gradient-primary">Services</span>
                         </h1>
                         <p className="text-xl text-muted-foreground">
-                            End-to-end technology solutions tailored to your business needs.
-                        </p>
+                            NanTech delivers focused, high-impact technology services designed to turn strategy
+                            into execution. We specialize in building software, leading complex initiatives, and
+                            applying AI responsibly to solve real-world problems.                        </p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
