@@ -31,21 +31,25 @@ export default function AboutPage() {
 
 
             {/* Hero / Vision Section */}
-            <section className="pt-32 pb-12 relative overflow-hidden">
+            <section className="pt-24 pb-12 relative overflow-hidden">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="text-center mb-8">
+                        <h1 className="text-4xl md:text-6xl font-bold">About <span className="text-primary">Us</span></h1>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         {/* Left Column: Image */}
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="relative w-full aspect-square md:aspect-video lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl"
+                            className="relative w-full flex justify-center lg:justify-start"
                         >
                             <Image
                                 src="/images/about-us.jpg"
                                 alt="About NanTech"
-                                fill
-                                className="object-contain"
+                                width={800}
+                                height={800}
+                                className="object-contain rounded-2xl shadow-2xl"
                                 priority
                             />
                         </motion.div>
