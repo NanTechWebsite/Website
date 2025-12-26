@@ -34,7 +34,7 @@ export default function AboutPage() {
             <section className="pt-24 pb-12 relative overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-8">
-                        <h1 className="text-4xl md:text-6xl font-bold">About <span className="text-primary">Us</span></h1>
+                        <h1 className="text-3xl md:text-5xl font-bold">About <span className="text-primary">Us</span></h1>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         {/* Left Column: Image */}
@@ -61,9 +61,7 @@ export default function AboutPage() {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="flex flex-col justify-center"
                         >
-                            <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                                Our <span className="text-gradient-primary">Vision</span>
-                            </h1>
+
                             <h2 className="text-xl md:text-2xl font-semibold mb-6 text-primary">
                                 Founded on Execution, Responsibility, and Impact
                             </h2>
