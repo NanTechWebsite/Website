@@ -70,7 +70,7 @@ export default function ServicesPage() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <Card className="h-full border-white/5 bg-white/5 hover:bg-white/10 transition-colors group flex flex-col overflow-hidden">
+                                <Card className="h-full border-border bg-card hover:bg-accent/50 transition-colors group flex flex-col overflow-hidden">
                                     <div className="relative h-80 w-full">
                                         <Image
                                             src={service.image}
@@ -90,7 +90,7 @@ export default function ServicesPage() {
                                         </p>
                                         <div className="mt-auto pt-4">
                                             <Link href={`/services/${service.slug}`} className="inline-block">
-                                                <span className="text-sm font-medium text-primary group-hover:text-white transition-colors flex items-center cursor-pointer">
+                                                <span className="text-sm font-medium text-primary group-hover:text-foreground transition-colors flex items-center cursor-pointer">
                                                     {service.linkText} <ArrowRight className="ml-2 w-4 h-4" />
                                                 </span>
                                             </Link>

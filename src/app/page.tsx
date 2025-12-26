@@ -55,20 +55,19 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-10 pb-20 md:pt-20 md:pb-32 overflow-hidden">
-
+      <section className="relative pt-6 pb-16 md:pt-12 md:pb-24 overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content - Starts Left on Desktop */}
+          <div className="flex flex-col gap-6 items-center">
+            {/* Text Content - Below Image */}
             <motion.div
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1"
+              className="flex flex-col items-center text-center order-2 w-full"
             >
               <motion.h1
                 variants={itemVariants}
-                className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
+                className="text-2xl md:text-4xl font-bold tracking-tight mb-6"
               >
                 YOUR <span className="text-gradient-primary">IT & AI</span> HUB!
               </motion.h1>
@@ -98,18 +97,18 @@ export default function Home() {
               </motion.div>
             </motion.div>
 
-            {/* Hero Image - Right on Desktop */}
+            {/* Hero Image - Top */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="relative w-full mx-auto aspect-[4/3] rounded-2xl overflow-hidden order-1 lg:order-2"
+              className="relative w-full max-w-5xl mx-auto aspect-[24/9] rounded-2xl overflow-hidden order-1"
             >
               <Image
-                src="/images/hero-banner.jpg"
+                src="/images/hero-banner-updated.jpg"
                 alt="NanTech Dashboard"
                 fill
-                className="object-contain"
+                className="object-cover"
                 priority
               />
             </motion.div>
@@ -118,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Comprehensive Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-black/20">
+      <section id="services" className="py-20 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Comprehensive Services</h2>
@@ -136,7 +135,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="h-full border-white/5 bg-white/5 hover:bg-white/10 transition-colors group flex flex-col overflow-hidden">
+                <Card className="h-full border-border bg-card hover:bg-accent/50 transition-colors group flex flex-col overflow-hidden">
                   <div className="relative h-80 w-full">
                     <Image
                       src={service.image}
@@ -211,7 +210,7 @@ export default function Home() {
                   <div key={item.id} className="flex gap-4">
                     <span className="text-2xl font-bold text-primary/50">{item.id}.</span>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                      <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
                       <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
@@ -241,24 +240,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client Testimonials */}
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-            <h2 className="text-xl md:text-2xl font-bold mb-12">Client Testimonials</h2>
-            <div className="glass-card p-10 rounded-2xl relative">
-              <div className="text-5xl text-primary absolute top-4 left-6 opacity-30">"</div>
-              <p className="text-lg md:text-xl text-muted-foreground italic mb-8 relative z-10 leading-relaxed">
-                Partnering with NanTech has transformed our operations. Their expertise in IT solutions and commitment to excellence have streamlined our processes and driven significant growth. We couldn’t ask for a better technology partner!
-              </p>
-              <div>
-                <h4 className="font-bold text-white">Jason Strauss</h4>
-                <p className="text-primary text-sm">CEO of TechPro Solutions</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-20">

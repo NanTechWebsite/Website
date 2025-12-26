@@ -8,6 +8,8 @@ import { ScrollControls } from "@/components/ui/scroll-controls";
 import { ChatBot } from "@/components/chat-bot";
 
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
@@ -21,17 +23,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth cursor-none">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground selection:bg-primary/30 selection:text-white`}>
-
-        <CustomCursor />
-        <ScrollControls />
-        <Navbar />
-        <main className="min-h-screen pt-20">
-          {children}
-        </main>
-        <ChatBot />
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CustomCursor />
+          <ScrollControls />
+          <Navbar />
+          <main className="min-h-screen pt-20">
+            {children}
+          </main>
+          <ChatBot />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

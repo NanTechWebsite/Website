@@ -78,7 +78,7 @@ export default function AboutPage() {
             </section>
 
             {/* Certifications & DUNS */}
-            <section className="py-12 bg-white/5">
+            <section className="py-12 bg-muted/10">
                 <div className="container mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ export default function AboutPage() {
                                     { label: "PMP Certification #", value: "1877847" },
                                     { label: "CSM (Scrum Master) #", value: "924516" },
                                 ].map((item, index) => (
-                                    <div key={index} className="flex items-center gap-3 bg-background/50 p-3 rounded-lg border border-white/5">
+                                    <div key={index} className="flex items-center gap-3 bg-background/50 p-3 rounded-lg border border-border">
                                         <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                                         <span className="font-medium text-muted-foreground">
                                             {item.label} <span className="text-foreground">{item.value}</span>
@@ -114,7 +114,7 @@ export default function AboutPage() {
             </section>
 
             {/* NAICS Codes */}
-            <section className="py-20 bg-black/20">
+            <section className="py-20 bg-muted/30">
                 <div className="container mx-auto px-6">
                     <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gradient-primary">NAICS Codes</h2>
                     <p className="text-center text-muted-foreground mb-12">NanTech Qualifies as a Small Business (&lt;$15M) in the following NAICS Codes:</p>
@@ -130,7 +130,7 @@ export default function AboutPage() {
                             >
                                 <Card className="hover:border-primary/50 transition-colors">
                                     <CardContent className="p-6">
-                                        <span className="text-3xl font-bold text-white/10 absolute right-4 top-2">{item.code}</span>
+                                        <span className="text-3xl font-bold text-foreground/10 absolute right-4 top-2">{item.code}</span>
                                         <h4 className="text-xl font-bold text-primary mb-2 relative z-10">{item.code}</h4>
                                         <p className="text-muted-foreground relative z-10">{item.title}</p>
                                     </CardContent>
