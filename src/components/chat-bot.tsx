@@ -85,7 +85,7 @@ export function ChatBot() {
             botText = "NanTech is a woman-owned, minority-owned SDB & HUBZone business. Our vision is founded on Execution, Responsibility, and Impact.";
             action = { label: "Read Our Story", handler: () => router.push("/about") };
         } else if (lowerText.match(/contact|email|reach|phone|location|address/)) {
-            botText = "You can reach us at info@nantechs.com or visit us at 800 3rd St #100, Herndon, VA 20170. Would you like to send a message now?";
+            botText = "You can reach us at info@nantechs.com or visit us at Reston, Virginia USA. Would you like to send a message now?";
             action = { label: "Go to Contact Form", handler: () => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }) };
         } else if (lowerText.match(/cert|duns|women|minority/)) {
             botText = "We hold several certifications: DUNS #080494890, Woman-Owned Small Business, Minority-Owned, SDB, HUBZone, PMP, and CSM.";

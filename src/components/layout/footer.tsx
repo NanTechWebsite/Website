@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logo.jpg";
 import { Linkedin, Facebook, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -8,11 +10,16 @@ export function Footer() {
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-                            NanTech
-                        </h3>
+                        <div className="relative w-[180px] h-[70px] -ml-2 mb-2">
+                            <Image
+                                src={logo}
+                                alt="NanTech"
+                                fill
+                                className="object-contain object-left"
+                            />
+                        </div>
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Empowering businesses with cutting-edge IT infrastructure, Cloud Solutions, and AI-driven analytics.
+                            Empowering organizations through intelligent software, disciplined delivery, and responsible AI solutions.
                         </p>
                     </div>
 
@@ -20,7 +27,7 @@ export function Footer() {
                         <h4 className="font-semibold text-white mb-6">Quick Links</h4>
                         <ul className="space-y-3 text-sm text-muted-foreground">
                             <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-                            <li><Link href="/about" className="hover:text-primary transition-colors">About</Link></li>
+                            <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
                             <li><Link href="/services" className="hover:text-primary transition-colors">Services</Link></li>
                             <li><Link href="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
                             <li><Link href="/#why-us" className="hover:text-primary transition-colors">Why Us</Link></li>
@@ -33,7 +40,8 @@ export function Footer() {
                         <ul className="space-y-4 text-sm text-muted-foreground">
                             <li className="flex items-center gap-3">
                                 <MapPin className="w-5 h-5 text-primary" />
-                                <span>800 3rd St #100, Herndon, VA 20170</span>
+                                <span>Reston, Virginia USA
+                                </span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary" />

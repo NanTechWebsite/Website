@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Industries", href: "/industries" },
     { name: "Why Us", href: "/#why-us" },
@@ -40,7 +40,7 @@ export function Navbar() {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 group">
                     {/* Desktop Logo */}
-                    <div className="relative hidden md:block w-[200px] h-[80px]">
+                    <div className="relative hidden md:block w-[220px] h-[90px]">
                         <Image
                             src={logo}
                             alt="NanTech"
@@ -51,7 +51,7 @@ export function Navbar() {
                     </div>
 
                     {/* Mobile Logo */}
-                    <div className="relative block md:hidden w-[150px] h-[60px]">
+                    <div className="relative block md:hidden w-[160px] h-[70px]">
                         <Image
                             src={logo}
                             alt="NanTech"

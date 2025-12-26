@@ -56,7 +56,8 @@ export function ContactSection() {
                                 <MapPin className="w-6 h-6 text-primary mt-1" />
                                 <div>
                                     <h4 className="font-semibold text-white">Address</h4>
-                                    <p className="text-muted-foreground">800 3rd St #100, Herndon, VA 20170</p>
+                                    <p className="text-muted-foreground">Reston, Virginia USA
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
