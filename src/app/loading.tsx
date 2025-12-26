@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "@/assets/logo.jpg";
 
 export default function Loading() {
     return (
@@ -6,7 +7,7 @@ export default function Loading() {
             <div className="flex flex-col items-center gap-4">
                 <div className="relative w-32 h-16 animate-pulse">
                     <Image
-                        src="/big-logo.jpg"
+                        src={logo}
                         alt="Loading..."
                         fill
                         className="object-contain"

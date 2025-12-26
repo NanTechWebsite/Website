@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/assets/logo.jpg";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -41,7 +42,7 @@ export function Navbar() {
                     {/* Desktop Logo */}
                     <div className="relative hidden md:block w-[200px] h-[80px]">
                         <Image
-                            src="/big-logo.jpg"
+                            src={logo}
                             alt="NanTech"
                             fill
                             className="object-contain"
@@ -52,7 +53,7 @@ export function Navbar() {
                     {/* Mobile Logo */}
                     <div className="relative block md:hidden w-[150px] h-[60px]">
                         <Image
-                            src="/small-logo.jpg"
+                            src={logo}
                             alt="NanTech"
                             fill
                             className="object-contain"

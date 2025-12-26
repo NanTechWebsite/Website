@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import logo from "@/assets/logo.jpg";
 
 export function Preloader() {
     const [loading, setLoading] = useState(true);
@@ -35,7 +36,7 @@ export function Preloader() {
                         className="relative w-64 h-32 md:w-80 md:h-40"
                     >
                         <Image
-                            src="/big-logo.jpg"
+                            src={logo}
                             alt="NanTech Logo"
                             fill
                             className="object-contain"

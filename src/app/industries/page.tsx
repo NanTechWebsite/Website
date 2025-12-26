@@ -47,7 +47,7 @@ export default function IndustriesPage() {
                         variants={containerVariants}
                         className="text-center max-w-4xl mx-auto mb-16"
                     >
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                        <h1 className="text-3xl md:text-5xl font-bold mb-6">
                             IT Solutions for <span className="text-gradient-primary">Your Business</span>
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12">

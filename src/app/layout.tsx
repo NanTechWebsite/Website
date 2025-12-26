@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CustomCursor } from "@/components/ui/custom-cursor";
 import { ScrollControls } from "@/components/ui/scroll-controls";
-import { Preloader } from "@/components/ui/preloader";
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth cursor-none">
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground selection:bg-primary/30 selection:text-white`}>
-        <Preloader />
+
         <CustomCursor />
         <ScrollControls />
         <Navbar />

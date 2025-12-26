@@ -39,7 +39,7 @@ export default function AboutPage() {
                         variants={containerVariants}
                         className="max-w-4xl mx-auto text-center"
                     >
-                        <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6">
+                        <motion.h1 variants={itemVariants} className="text-3xl md:text-5xl font-bold mb-6">
                             About <span className="text-gradient-primary">NanTech</span>
                         </motion.h1>
                         <motion.p variants={itemVariants} className="text-xl text-muted-foreground leading-relaxed mb-12">
@@ -144,7 +144,7 @@ export default function AboutPage() {
             {/* NAICS Codes */}
             <section className="py-20 bg-black/20">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold mb-8 text-center text-gradient-primary">NAICS Codes</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gradient-primary">NAICS Codes</h2>
                     <p className="text-center text-muted-foreground mb-12">NanTech Qualifies as a Small Business (&lt;$15M) in the following NAICS Codes:</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
