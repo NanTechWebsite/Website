@@ -57,6 +57,48 @@ const servicesData: Record<string, {
             "Ethical AI Frameworks"
         ],
         details: "Artificial Intelligence is transforming industries, but navigating the landscape can be overwhelming. Our AI consulting services demystify AI and help you identify high-value use cases relevant to your business. We focus on practical applications that drive efficiency and innovation, rather than chasing hype. Whether you're looking to automate routine tasks, gain deeper insights from your data, or build custom AI agents, we provide the expertise to implement AI responsibly and effectively."
+    },
+    "edtech-ai-learning": {
+        title: "EdTech & AI Learning (MathPi)",
+        image: "/images/service-edtech.jpg",
+        description: "We design AI-powered educational platforms that personalize learning, improve engagement, and drive measurable outcomes. From adaptive tutoring systems to intelligent assessments and analytics, our EdTech solutions help students, educators, and institutions learn smarter and scale impact.",
+        benefits: [
+            "Personalized Learning Paths",
+            "Adaptive Tutoring Systems",
+            "Intelligent Assessments",
+            "Real-time Analytics",
+            "Student Engagement",
+            "Scalable Educational Impact"
+        ],
+        details: "Our EdTech solutions are designed to transform the learning experience. By leveraging the power of AI, we create platforms that adapt to individual student needs, providing personalized content and feedback. Whether for K-12, higher education, or corporate training, MathPi helps unlock potential and drive academic and professional success."
+    },
+    "workforce-development": {
+        title: "Workforce Development (TrainPi)",
+        image: "/images/service-workforce.jpg",
+        description: "We build AI-driven workforce and career development platforms that help individuals and organizations identify skills gaps, deliver targeted training, and align learning with real-world outcomes. Our solutions support reskilling, upskilling, and career mobility at scale.",
+        benefits: [
+            "Skills Gap Analysis",
+            "Targeted Training Delivery",
+            "AI-Driven Career Pathways",
+            "Reskilling & Upskilling",
+            "Performance Alignment",
+            "Workforce Analytics"
+        ],
+        details: "TrainPi is committed to bridging the gap between talent and opportunity. Our platforms utilize advanced algorithms to map skills to career trajectories, ensuring that training initiatives are aligned with market demands. We empower organizations to build a future-ready workforce and help individuals achieve their career aspirations."
+    },
+    "hr-talent-operations": {
+        title: "HR & Talent Operations",
+        image: "/images/service-hr.jpg",
+        description: "We deliver intelligent HR solutions that streamline recruiting, onboarding, training, and workforce analytics. By combining automation and AI insights, we help organizations make better talent decisions, improve employee experience, and operate more efficiently.",
+        benefits: [
+            "Recruiting Automation",
+            "Onboarding Optimization",
+            "Workforce Planning",
+            "Employee Experience",
+            "Talent Analytics",
+            "Operational Efficiency"
+        ],
+        details: "Our HR & Talent Operations solutions bring data-driven insights and automation to human resources. We help you move beyond administrative tasks to strategic talent management. From identifying top talent to fostering a positive workplace culture, our tools provide the clarity and efficiency needed to build high-performing teams."
     }
 };
 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Code, Briefcase, Brain } from "lucide-react";
+import { ArrowRight, Code, Briefcase, Brain, GraduationCap, TrendingUp, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactSection } from "@/components/sections/contact-section";
@@ -49,6 +49,36 @@ export default function Home() {
       linkText: "Innovate Now",
       image: "/images/service-ai-consulting.jpg",
       slug: "ai-consulting"
+    },
+    {
+      title: "EdTech & AI Learning (MathPi)",
+      icon: GraduationCap,
+      desc: "We design AI-powered educational platforms that personalize learning, improve engagement, and drive measurable outcomes. From adaptive tutoring systems to intelligent assessments and analytics, our EdTech solutions help students, educators, and institutions learn smarter and scale impact.",
+      linkText: "Explore More",
+      image: "/images/service-hr.jpg",
+
+
+      slug: "edtech-ai-learning"
+    },
+    {
+      title: "Workforce Development (TrainPi)",
+      icon: TrendingUp,
+      desc: "We build AI-driven workforce and career development platforms that help individuals and organizations identify skills gaps, deliver targeted training, and align learning with real-world outcomes. Our solutions support reskilling, upskilling, and career mobility at scale.",
+
+      linkText: "Discover More",
+      image: "/images/service-edtech.jpg",
+
+
+      slug: "workforce-development"
+    },
+    {
+      title: "HR & Talent Operations",
+      icon: Users,
+      desc: "We deliver intelligent HR solutions that streamline recruiting, onboarding, training, and workforce analytics. By combining automation and AI insights, we help organizations make better talent decisions, improve employee experience, and operate more efficiently.",
+      linkText: "Explore More",
+      image: "/images/service-workforce.jpg",
+
+      slug: "hr-talent-operations"
     }
   ];
 
