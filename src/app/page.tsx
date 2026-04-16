@@ -56,19 +56,16 @@ export default function Home() {
       desc: "We design AI-powered educational platforms that personalize learning, improve engagement, and drive measurable outcomes. From adaptive tutoring systems to intelligent assessments and analytics, our EdTech solutions help students, educators, and institutions learn smarter and scale impact.",
       linkText: "Explore More",
       image: "/images/service-hr.jpg",
-
-
+      href: "/demo#mathpi",
       slug: "edtech-ai-learning"
     },
     {
       title: "Workforce Development (TrainPi)",
       icon: TrendingUp,
       desc: "We build AI-driven workforce and career development platforms that help individuals and organizations identify skills gaps, deliver targeted training, and align learning with real-world outcomes. Our solutions support reskilling, upskilling, and career mobility at scale.",
-
       linkText: "Discover More",
       image: "/images/service-edtech.jpg",
-
-
+      href: "/demo#trainpi",
       slug: "workforce-development"
     },
     {
@@ -184,7 +181,7 @@ export default function Home() {
                       {service.desc}
                     </p>
                     <div className="mt-auto pt-4">
-                      <Link href={`/services/${service.slug}`} className="inline-block">
+                      <Link href={service.href ?? `/services/${service.slug}`} className="inline-block">
                         <span className="text-sm font-medium text-primary group-hover:text-white transition-colors flex items-center">
                           {service.linkText} <ArrowRight className="ml-2 w-4 h-4" />
                         </span>
