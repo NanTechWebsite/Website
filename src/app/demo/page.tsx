@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Play, GraduationCap, TrendingUp } from "lucide-react";
 
@@ -46,9 +47,32 @@ const demos: Demo[] = [
   },
 ];
 
-function VideoCard({ demo }: { demo: Demo }) {
+function VideoCard({
+  demo,
+  autoplay,
+}: {
+  demo: Demo;
+  autoplay: boolean;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
+
+  // Autoplay this video when the page loads if it matches the hash
+  useEffect(() => {
+    if (autoplay && videoRef.current) {
+      const vid = videoRef.current;
+      // Scroll into view first, then play
+      vid.scrollIntoView({ behavior: "smooth", block: "center" });
+      const playPromise = vid.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => setPlaying(true))
+          .catch(() => {
+            // Browser blocked autoplay — user will click manually
+          });
+      }
+    }
+  }, [autoplay]);
 
   const handlePlay = () => {
     if (videoRef.current) {
@@ -56,9 +80,6 @@ function VideoCard({ demo }: { demo: Demo }) {
       setPlaying(true);
     }
   };
-
-  const handlePause = () => setPlaying(false);
-  const handleEnded = () => setPlaying(false);
 
   return (
     <motion.div
@@ -96,15 +117,15 @@ function VideoCard({ demo }: { demo: Demo }) {
           preload="auto"
           playsInline
           onPlay={() => setPlaying(true)}
-          onPause={handlePause}
-          onEnded={handleEnded}
+          onPause={() => setPlaying(false)}
+          onEnded={() => setPlaying(false)}
           className="w-full aspect-video block"
         >
           <source src={demo.video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Play overlay — only shown before first play */}
+        {/* Play overlay — hidden once playing */}
         {!playing && (
           <button
             onClick={handlePlay}
@@ -127,6 +148,14 @@ function VideoCard({ demo }: { demo: Demo }) {
 }
 
 export default function DemoPage() {
+  const [activeHash, setActiveHash] = useState<string>("");
+
+  useEffect(() => {
+    // Read the hash from the URL (e.g. #mathpi or #trainpi)
+    const hash = window.location.hash.replace("#", "");
+    setActiveHash(hash);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -158,7 +187,11 @@ export default function DemoPage() {
       <section className="pb-28">
         <div className="container mx-auto px-6 space-y-20">
           {demos.map((demo) => (
-            <VideoCard key={demo.id} demo={demo} />
+            <VideoCard
+              key={demo.id}
+              demo={demo}
+              autoplay={activeHash === demo.id}
+            />
           ))}
         </div>
       </section>

@@ -54,7 +54,7 @@ export default function Home() {
       title: "EdTech & AI Learning (MathPi)",
       icon: GraduationCap,
       desc: "We design AI-powered educational platforms that personalize learning, improve engagement, and drive measurable outcomes. From adaptive tutoring systems to intelligent assessments and analytics, our EdTech solutions help students, educators, and institutions learn smarter and scale impact.",
-      linkText: "Explore More",
+      linkText: "Watch Demo",
       image: "/images/service-hr.jpg",
       href: "/demo#mathpi",
       slug: "edtech-ai-learning"
@@ -63,7 +63,7 @@ export default function Home() {
       title: "Workforce Development (TrainPi)",
       icon: TrendingUp,
       desc: "We build AI-driven workforce and career development platforms that help individuals and organizations identify skills gaps, deliver targeted training, and align learning with real-world outcomes. Our solutions support reskilling, upskilling, and career mobility at scale.",
-      linkText: "Discover More",
+      linkText: "Watch Demo",
       image: "/images/service-edtech.jpg",
       href: "/demo#trainpi",
       slug: "workforce-development"
