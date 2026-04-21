@@ -44,17 +44,19 @@ export default function ServicesPage() {
             title: "EdTech & AI Learning (MathPi)",
             icon: GraduationCap,
             desc: "We design AI-powered educational platforms that personalize learning, improve engagement, and drive measurable outcomes. From adaptive tutoring systems to intelligent assessments and analytics, our EdTech solutions help students, educators, and institutions learn smarter and scale impact.",
-            linkText: "Explore More",
+            linkText: "Watch Demo",
             image: "/images/service-hr.jpg",
-            slug: "edtech-ai-learning"
+            slug: "edtech-ai-learning",
+            href: "/demo#mathpi"
         },
         {
             title: "Workforce Development (TrainPi)",
             icon: TrendingUp,
             desc: "We build AI-driven workforce and career development platforms that help individuals and organizations identify skills gaps, deliver targeted training, and align learning with real-world outcomes. Our solutions support reskilling, upskilling, and career mobility at scale.",
-            linkText: "Discover More",
+            linkText: "Watch Demo",
             image: "/images/service-edtech.jpg",
-            slug: "workforce-development"
+            slug: "workforce-development",
+            href: "/demo#trainpi"
         },
         {
             title: "HR & Talent Operations",
@@ -113,7 +115,7 @@ export default function ServicesPage() {
                                             {service.desc}
                                         </p>
                                         <div className="mt-auto pt-4">
-                                            <Link href={`/services/${service.slug}`} className="inline-block">
+                                            <Link href={service.href ?? `/services/${service.slug}`} className="inline-block">
                                                 <span className="text-sm font-medium text-primary group-hover:text-foreground transition-colors flex items-center cursor-pointer">
                                                     {service.linkText} <ArrowRight className="ml-2 w-4 h-4" />
                                                 </span>
