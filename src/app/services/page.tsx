@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ContactSection } from "@/components/sections/contact-section";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Briefcase, Brain, GraduationCap, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, Workflow, Briefcase, Brain, GraduationCap, TrendingUp, Users } from "lucide-react";
 
 import Image from "next/image";
 //
@@ -17,28 +17,28 @@ export default function ServicesPage() {
 
     const services = [
         {
-            title: "Software Development",
-            icon: Code,
-            desc: "We design and build secure, scalable software solutions tailored to your organization’s needs. From custom applications and platforms to system modernization and integrations, we focus on clean architecture, user-centered design, and long-term maintainability.",
+            title: "Process & Workflow Improvement",
+            icon: Workflow,
+            desc: "We help organizations understand how work gets done today and where it can work better. Through workflow assessment and process mapping, we identify bottlenecks, manual effort, unclear handoffs, documentation gaps, and opportunities to improve efficiency, consistency, and visibility.",
             linkText: "Explore More",
-            image: "/images/service-software.jpg",
-            slug: "software-development"
+            image: "/images/service-process-workflow.jpg",
+            slug: "process-workflow-improvement"
         },
         {
             title: "Project & Program Management",
             icon: Briefcase,
-            desc: "We provide hands-on leadership to plan, execute, and deliver complex technology initiatives. Using Agile and hybrid delivery models, we align stakeholders, manage risk, and ensure projects stay on track—bridging technical teams with business goals.",
-            linkText: "Discover More",
+            desc: "NanTech helps organizations turn priorities into execution. We provide hands-on leadership and coordination to keep complex initiatives aligned, risks visible, stakeholders engaged, and delivery moving forward.",
+            linkText: "Explore More",
             image: "/images/service-project-management.jpg",
             slug: "project-program-management"
         },
         {
-            title: "AI Consulting",
+            title: "AI Strategy & Solutions",
             icon: Brain,
-            desc: "We help organizations apply AI in practical, ethical, and impactful ways. From AI strategy and readiness assessments to intelligent automation and data-driven insights, we guide teams in adopting AI solutions that are responsible, transparent, and scalable.",
-            linkText: "Innovate Now",
-            image: "/images/service-ai-consulting.jpg",
-            slug: "ai-consulting"
+            desc: "NanTech helps organizations identify where AI can create meaningful value. From AI readiness and use-case assessment to targeted pilots and AI-enabled solutions, we focus on practical, responsible applications of AI tied to real organizational needs.",
+            linkText: "Explore More",
+            image: "/images/service-ai-strategy.jpg",
+            slug: "ai-strategy-solutions"
         },
         {
             title: "EdTech & AI Learning (MathPi)",
@@ -79,12 +79,14 @@ export default function ServicesPage() {
                         className="text-center max-w-4xl mx-auto mb-16"
                     >
                         <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                            Our Comprehensive <span className="text-gradient-primary">Services</span>
+                            Solutions Built <span className="text-gradient-primary">Around Real Needs</span>
                         </h1>
                         <p className="text-xl text-muted-foreground">
-                            NanTech delivers focused, high-impact technology services designed to turn strategy
-                            into execution. We specialize in building software, leading complex initiatives, and
-                            applying AI responsibly to solve real-world problems.                        </p>
+                            NanTech helps organizations solve complex operational and technology challenges through
+                            process improvement, program management, software and modernization, and responsible AI.
+                            We start by understanding the need, then bring the right combination of expertise and
+                            technology to deliver practical, sustainable solutions.
+                        </p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

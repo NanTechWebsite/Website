@@ -63,7 +63,7 @@ export function ChatBot() {
         } else if (lowerText.match(/who are you|what are you|your name/)) {
             botText = "I am the NanTech Assistant, a virtual guide designed to help you navigate our services and offerings.";
         } else if (lowerText.match(/what can you do|help me|capabilities/)) {
-            botText = "I can provide information about our Software Development, Program Management, and AI Consulting services. I can also help you find our contact details or learn about our company vision.";
+            botText = "I can provide information about our Process & Workflow Improvement, Project & Program Management, and AI Strategy & Solutions services. I can also help you find our contact details or learn about our company vision.";
         } else if (lowerText.match(/cool|nice|good bot|awesome|great|cloud/)) {
             botText = "Glad you think so! We pride ourselves on delivering premium quality in everything we do.";
         } else if (lowerText.match(/thank|thanks|appreciate/)) {
@@ -71,16 +71,16 @@ export function ChatBot() {
         } else if (lowerText.match(/bye|goodbye|see you|later/)) {
             botText = "Goodbye! Have a wonderful day. Feel free to return if you have more questions.";
         } else if (lowerText.match(/service|offer|do|provide|work/)) {
-            botText = "We offer three core services: 1. Software Development, 2. Project & Program Management, and 3. AI Consulting. Which one would you like to know more about?";
-        } else if (lowerText.match(/software|development|app|web|code/)) {
-            botText = "Our Software Development service builds secure, scalable solutions tailored to your needs, focusing on clean architecture and user-centered design.";
-            action = { label: "View Software Services", handler: () => router.push("/services/software-development") };
+            botText = "We offer three core services: 1. Process & Workflow Improvement, 2. Project & Program Management, and 3. AI Strategy & Solutions. Which one would you like to know more about?";
+        } else if (lowerText.match(/software|development|app|web|code|process|workflow|bottleneck/)) {
+            botText = "Our Process & Workflow Improvement service helps you identify bottlenecks, manual effort, and unclear handoffs, then improves efficiency, consistency, and visibility.";
+            action = { label: "View Process Services", handler: () => router.push("/services/process-workflow-improvement") };
         } else if (lowerText.match(/project|program|management|pmp|agile/)) {
-            botText = "We provide hands-on leadership for complex tech initiatives using Agile and hybrid models to ensure projects stay on track.";
+            botText = "We provide hands-on leadership and coordination to keep complex initiatives aligned, risks visible, and delivery moving forward.";
             action = { label: "View PM Services", handler: () => router.push("/services/project-program-management") };
-        } else if (lowerText.match(/ai|consulting|intelligence|automation/)) {
-            botText = "Our AI Consulting helps organizations apply AI ethically and impactfully, from strategy to intelligent automation.";
-            action = { label: "View AI Services", handler: () => router.push("/services/ai-consulting") };
+        } else if (lowerText.match(/ai|consulting|intelligence|automation|strategy/)) {
+            botText = "Our AI Strategy & Solutions service helps you identify where AI can create meaningful value, from readiness assessments to targeted pilots.";
+            action = { label: "View AI Services", handler: () => router.push("/services/ai-strategy-solutions") };
         } else if (lowerText.match(/about|vision|founder|company|who/)) {
             botText = "NanTech is a woman-owned, minority-owned SDB & HUBZone business. Our vision is founded on Execution, Responsibility, and Impact.";
             action = { label: "Read Our Story", handler: () => router.push("/about") };

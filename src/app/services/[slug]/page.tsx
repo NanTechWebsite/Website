@@ -11,52 +11,67 @@ import { useParams } from "next/navigation";
 // Service Data
 const servicesData: Record<string, {
     title: string;
+    tagline?: string;
     image: string;
     description: string;
     benefits: string[];
     details: string;
+    ctaTitle?: string;
+    ctaBody?: string;
+    ctaButton?: string;
 }> = {
-    "software-development": {
-        title: "Software Development",
-        image: "/images/service-software.jpg",
-        description: "We design and build secure, scalable software solutions tailored to your organization’s needs. From custom applications and platforms to system modernization and integrations, we focus on clean architecture, user-centered design, and long-term maintainability.",
+    "process-workflow-improvement": {
+        title: "Process & Workflow Improvement",
+        tagline: "Where is work getting stuck?",
+        image: "/images/service-process-workflow.jpg",
+        description: "We help organizations understand how work gets done today and where it can work better. Through workflow assessment and process mapping, we identify bottlenecks, manual effort, unclear handoffs, documentation gaps, and opportunities to improve efficiency, consistency, and visibility.",
         benefits: [
-            "Custom Web & Mobile Applications",
-            "Enterprise System Integrations",
-            "Legacy System Modernization",
-            "Cloud-Native Solutions",
-            "API Design & Development",
-            "Secure & Scalable Architecture"
+            "Workflow Assessment & Process Mapping",
+            "Bottleneck & Handoff Analysis",
+            "Manual Effort & Documentation Review",
+            "Practical Improvement Recommendations",
+            "Automation & Technology Opportunities"
         ],
-        details: "Our software development services are built on a foundation of engineering excellence and agile methodologies. We don't just write code; we solve business problems. Whether you need a customer-facing portal, an internal workflow tool, or a complex data processing system, our team delivers robust, high-performance solutions that grow with your business. We prioritize security, performance, and user experience at every stage of the development lifecycle."
+        details: "NanTech helps organizations uncover the friction that slows work down—from manual steps and repeated follow-ups to unclear handoffs, documentation gaps, and disconnected processes. We assess how the work gets done today and identify practical opportunities to make it simpler, clearer, and more effective.",
+        ctaTitle: "Start With One Workflow",
+        ctaBody: "Choose one process that takes too much time, requires too much follow-up, or simply isn't working as well as it should. Let NanTech help you find a better way.",
+        ctaButton: "Request an Assessment"
     },
     "project-program-management": {
         title: "Project & Program Management",
+        tagline: "Turning priorities into progress.",
         image: "/images/service-project-management.jpg",
-        description: "We provide hands-on leadership to plan, execute, and deliver complex technology initiatives. Using Agile and hybrid delivery models, we align stakeholders, manage risk, and ensure projects stay on track—bridging technical teams with business goals.",
+        description: "NanTech helps organizations turn priorities into execution. We provide hands-on leadership and coordination to keep complex initiatives aligned, risks visible, stakeholders engaged, and delivery moving forward.",
         benefits: [
-            "Agile & Hybrid Project Delivery",
-            "Program Governance & Oversight",
-            "Risk Management & Mitigation",
-            "Stakeholder Alignment & Communication",
-            "Resource Planning & Optimization",
-            "Change Management"
+            "Project & Program Planning",
+            "Stakeholder Coordination & Alignment",
+            "Requirements & Delivery Management",
+            "Risk, Issue & Dependency Management",
+            "Implementation & Modernization Support",
+            "Executive Reporting & Decision Support"
         ],
-        details: "Effective project management is the bridge between strategy and execution. Our team of certified project and program managers brings structure and clarity to complex initiatives. We handle the heavy lifting of coordination, timeline management, and blocker removal, allowing your teams to focus on high-value work. From small-scale implementations to large enterprise transformations, we ensure your projects are delivered on time, within budget, and with the desired impact."
+        details: "Complex initiatives require more than a plan. NanTech helps organizations coordinate people, priorities, technology, and decisions to move critical work forward with clarity and accountability.",
+        ctaTitle: "Move Critical Initiatives Forward",
+        ctaBody: "Whether launching a new initiative, modernizing technology, or getting a complex project back on track, NanTech provides the structure and leadership needed to turn plans into measurable progress.",
+        ctaButton: "Get Started"
     },
-    "ai-consulting": {
-        title: "AI Consulting",
-        image: "/images/service-ai-consulting.jpg",
-        description: "We help organizations apply AI in practical, ethical, and impactful ways. From AI strategy and readiness assessments to intelligent automation and data-driven insights, we guide teams in adopting AI solutions that are responsible, transparent, and scalable.",
+    "ai-strategy-solutions": {
+        title: "AI Strategy & Solutions",
+        tagline: "AI should solve a problem—not become one.",
+        image: "/images/service-ai-strategy.jpg",
+        description: "NanTech helps organizations identify where AI can create meaningful value. From AI readiness and use-case assessment to targeted pilots and AI-enabled solutions, we focus on practical, responsible applications of AI tied to real organizational needs.",
         benefits: [
-            "AI Strategy & Roadmap",
-            "Data Readiness Assessments",
-            "Intelligent Process Automation",
-            "Machine Learning Model Development",
-            "Generative AI Implementation",
-            "Ethical AI Frameworks"
+            "AI Readiness & Opportunity Assessment",
+            "AI Use-Case Identification",
+            "AI Strategy & Adoption Planning",
+            "Targeted AI Pilots & Prototypes",
+            "AI-Enabled Process Automation",
+            "Responsible AI Implementation"
         ],
-        details: "Artificial Intelligence is transforming industries, but navigating the landscape can be overwhelming. Our AI consulting services demystify AI and help you identify high-value use cases relevant to your business. We focus on practical applications that drive efficiency and innovation, rather than chasing hype. Whether you're looking to automate routine tasks, gain deeper insights from your data, or build custom AI agents, we provide the expertise to implement AI responsibly and effectively."
+        details: "NanTech helps organizations move beyond the hype to identify practical opportunities where AI can improve operations, support decision-making, automate appropriate tasks, or enhance existing services.",
+        ctaTitle: "Start With the Right Opportunity",
+        ctaBody: "We begin with the business or mission need, evaluate where AI can add meaningful value, and help define a practical path from idea to implementation.",
+        ctaButton: "Explore an AI Opportunity"
     },
     "edtech-ai-learning": {
         title: "EdTech & AI Learning (MathPi)",
@@ -124,6 +139,11 @@ export default function ServiceDetailPage() {
                             <h1 className="text-4xl md:text-6xl font-bold mb-6">
                                 {service.title}
                             </h1>
+                            {service.tagline && (
+                                <p className="text-2xl font-semibold text-primary mb-4">
+                                    {service.tagline}
+                                </p>
+                            )}
                             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                                 {service.description}
                             </p>
@@ -159,10 +179,10 @@ export default function ServiceDetailPage() {
                     </p>
 
                     <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20 text-center">
-                        <h3 className="text-2xl font-bold mb-4">Ready to start your project?</h3>
-                        <p className="mb-8 text-muted-foreground">Contact us today to discuss how our {service.title} services can help you achieve your goals.</p>
+                        <h3 className="text-2xl font-bold mb-4">{service.ctaTitle ?? "Ready to start your project?"}</h3>
+                        <p className="mb-8 text-muted-foreground">{service.ctaBody ?? `Contact us today to discuss how our ${service.title} services can help you achieve your goals.`}</p>
                         <Link href="#contact">
-                            <Button size="lg">Get in Touch</Button>
+                            <Button size="lg">{service.ctaButton ?? "Get in Touch"}</Button>
                         </Link>
                     </div>
                 </div>
