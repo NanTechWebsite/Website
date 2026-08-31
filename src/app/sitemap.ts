@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://www.trainpi.net";
+const baseUrl = "https://nantechs.com";
 
 const serviceSlugs = [
     "process-workflow-improvement",

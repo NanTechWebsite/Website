@@ -16,13 +16,13 @@ const title = "NanTech | Turning Complex Challenges Into Practical Solutions";
 const description = "NanTech is a mission-driven technology and AI company helping organizations improve operations through process & workflow improvement, project & program management, and responsible AI strategy & solutions.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.trainpi.net"),
+  metadataBase: new URL("https://nantechs.com"),
   title,
   description,
   openGraph: {
     title,
     description,
-    url: "https://www.trainpi.net",
+    url: "https://nantechs.com",
     siteName: "NanTech",
     type: "website",
   },

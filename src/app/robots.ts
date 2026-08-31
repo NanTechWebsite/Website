@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "https://www.trainpi.net/sitemap.xml",
+        sitemap: "https://nantechs.com/sitemap.xml",
     };
 }
