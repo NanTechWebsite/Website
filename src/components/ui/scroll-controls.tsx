@@ -6,14 +6,24 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function ScrollControls() {
-    const [show, setShow] = useState(false);
+    const [showTop, setShowTop] = useState(false);
+    const [showBottom, setShowBottom] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setShow(window.scrollY > 100);
+            const scrolledPast = window.scrollY > 100;
+            const nearBottom =
+                window.scrollY + window.innerHeight >= document.body.scrollHeight - 100;
+            setShowTop(scrolledPast);
+            setShowBottom(!nearBottom);
         };
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleScroll);
+        };
     }, []);
 
     const scrollToTop = () => {
@@ -27,7 +37,7 @@ export function ScrollControls() {
     return (
         <AnimatePresence>
             <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
-                {show && (
+                {showTop && (
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -36,6 +46,7 @@ export function ScrollControls() {
                         <Button
                             variant="secondary"
                             size="sm"
+                            aria-label="Scroll to top"
                             className="rounded-full w-12 h-12 p-0 shadow-lg border border-white/20 bg-black/80 backdrop-blur-md"
                             onClick={scrollToTop}
                         >
@@ -44,19 +55,23 @@ export function ScrollControls() {
                     </motion.div>
                 )}
 
-                <motion.div
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 1 }}
-                >
-                    <Button
-                        variant="secondary"
-                        size="sm"
-                        className="rounded-full w-12 h-12 p-0 shadow-lg border border-white/20 bg-black/80 backdrop-blur-md"
-                        onClick={scrollToBottom}
+                {showBottom && (
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
                     >
-                        <ArrowDown className="w-6 h-6" />
-                    </Button>
-                </motion.div>
+                        <Button
+                            variant="secondary"
+                            size="sm"
+                            aria-label="Scroll to bottom"
+                            className="rounded-full w-12 h-12 p-0 shadow-lg border border-white/20 bg-black/80 backdrop-blur-md"
+                            onClick={scrollToBottom}
+                        >
+                            <ArrowDown className="w-6 h-6" />
+                        </Button>
+                    </motion.div>
+                )}
             </div>
         </AnimatePresence>
     );

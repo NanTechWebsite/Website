@@ -111,7 +111,7 @@ export default function Home() {
               </motion.p>
 
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
-                <Link href="#contact">
+                <Link href="/#contact">
                   <Button size="md" className="w-[140px]">
                     Get Started <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
@@ -280,7 +280,7 @@ export default function Home() {
               <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto mb-10">
                 Take the first step towards optimizing your IT infrastructure. Contact us today for a free consultation and discover how NanTech can empower your business with cutting-edge IT solutions.
               </p>
-              <Link href="#contact">
+              <Link href="/#contact">
                 <Button size="lg" variant="secondary" className="text-primary hover:text-primary font-bold bg-white hover:bg-white/90">
                   Get Free Consultation
                 </Button>

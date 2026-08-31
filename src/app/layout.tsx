@@ -12,9 +12,25 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
+const title = "NanTech | Turning Complex Challenges Into Practical Solutions";
+const description = "NanTech is a mission-driven technology and AI company helping organizations improve operations through process & workflow improvement, project & program management, and responsible AI strategy & solutions.";
+
 export const metadata: Metadata = {
-  title: "NanTech | Turning Complex Challenges Into Practical Solutions",
-  description: "NanTech is a mission-driven technology and AI company helping organizations improve operations through process & workflow improvement, project & program management, and responsible AI strategy & solutions.",
+  metadataBase: new URL("https://www.trainpi.net"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://www.trainpi.net",
+    siteName: "NanTech",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

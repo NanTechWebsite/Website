@@ -181,7 +181,7 @@ export default function ServiceDetailPage() {
                     <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20 text-center">
                         <h3 className="text-2xl font-bold mb-4">{service.ctaTitle ?? "Ready to start your project?"}</h3>
                         <p className="mb-8 text-muted-foreground">{service.ctaBody ?? `Contact us today to discuss how our ${service.title} services can help you achieve your goals.`}</p>
-                        <Link href="#contact">
+                        <Link href="/#contact">
                             <Button size="lg">{service.ctaButton ?? "Get in Touch"}</Button>
                         </Link>
                     </div>

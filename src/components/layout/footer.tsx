@@ -53,12 +53,12 @@ export function Footer() {
                     <div className="flex flex-col items-start md:items-end gap-4">
                         <h4 className="font-semibold text-foreground mb-2 md:mb-6">Socials</h4>
                         <div className="flex flex-col gap-4">
-                            <Link href="https://www.facebook.com/profile.php?id=61564869365698" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.facebook.com/profile.php?id=61564869365698" target="_blank" rel="noopener noreferrer" aria-label="NanTech on Facebook">
                                 <Button variant="ghost" size="sm" className="w-10 h-10 p-0 rounded-full">
                                     <Facebook className="w-5 h-5" />
                                 </Button>
                             </Link>
-                            <Link href="https://www.linkedin.com/in/naina-zaman-566a05285/" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.linkedin.com/in/naina-zaman-566a05285/" target="_blank" rel="noopener noreferrer" aria-label="NanTech on LinkedIn">
                                 <Button variant="ghost" size="sm" className="w-10 h-10 p-0 rounded-full">
                                     <Linkedin className="w-5 h-5" />
                                 </Button>
@@ -68,7 +68,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-                    <p>© 2026 NanTech. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} NanTech. All rights reserved.</p>
                     <div className="flex gap-8">
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
