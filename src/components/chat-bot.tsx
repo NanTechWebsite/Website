@@ -127,7 +127,7 @@ export function ChatBot() {
                                 </div>
                                 <span className="font-semibold text-white">NanTech Assistant</span>
                             </div>
-                            <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-muted-foreground hover:text-white" onClick={() => setIsOpen(false)}>
+                            <Button variant="ghost" size="sm" aria-label="Close chat assistant" className="h-8 w-8 p-0 text-muted-foreground hover:text-white" onClick={() => setIsOpen(false)}>
                                 <X className="w-5 h-5" />
                             </Button>
                         </div>
@@ -177,7 +177,7 @@ export function ChatBot() {
                                     placeholder="Type a message..."
                                     className="flex-1 bg-black/20 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:ring-1 focus:ring-primary"
                                 />
-                                <Button type="submit" size="sm" className="shrink-0 w-9 p-0" disabled={!inputText.trim()}>
+                                <Button type="submit" size="sm" aria-label="Send message" className="shrink-0 w-9 p-0" disabled={!inputText.trim()}>
                                     <Send className="w-4 h-4" />
                                 </Button>
                             </div>
@@ -190,6 +190,8 @@ export function ChatBot() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close chat assistant" : "Open chat assistant"}
+                aria-expanded={isOpen}
                 className="w-14 h-14 bg-primary rounded-full shadow-lg shadow-primary/20 flex items-center justify-center text-primary-foreground transition-colors hover:bg-primary/90"
             >
                 {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}

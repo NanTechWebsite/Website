@@ -28,7 +28,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">1. Use of the Website</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">1. Use of the Website</h2>
                             <p className="mb-4">
                                 The NanTech website is provided for informational and business purposes only. You may
                                 use the Site solely for lawful purposes and in accordance with these Terms.
@@ -47,20 +47,20 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">2. No Professional or Legal Advice</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">2. No Professional or Legal Advice</h2>
                             <p className="mb-4">
                                 Content on this Site is provided for general informational purposes only and does not
                                 constitute legal, technical, financial, or professional advice.
                             </p>
                             <p>
-                                Engagements for consulting, software development, project or program management, or AI
-                                services are governed exclusively by separate written agreements executed between
-                                NanTech and its clients.
+                                Engagements for consulting, process and workflow improvement, project or program
+                                management, or AI services are governed exclusively by separate written agreements
+                                executed between NanTech and its clients.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">3. Intellectual Property Rights</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">3. Intellectual Property Rights</h2>
                             <p className="mb-4">
                                 All content on this Site, including but not limited to text, graphics, logos, images, designs,
                                 software, and trademarks (“Content”), is the property of NanTech or its licensors and is
@@ -79,7 +79,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">4. Third-Party Links</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">4. Third-Party Links</h2>
                             <p className="mb-4">
                                 The Site may include links to third-party websites for convenience or informational
                                 purposes. NanTech does not control and is not responsible for the content, security, or
@@ -89,7 +89,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">5. Disclaimer of Warranties</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">5. Disclaimer of Warranties</h2>
                             <p className="mb-4">
                                 The Site and all Content are provided “as is” and “as available.”
                             </p>
@@ -109,7 +109,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">6. Limitation of Liability</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
                             <p className="mb-4">
                                 To the maximum extent permitted by law, NanTech shall not be liable for any indirect,
                                 incidental, consequential, special, or punitive damages arising out of or related to your use
@@ -122,7 +122,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">7. Indemnification</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">7. Indemnification</h2>
                             <p className="mb-4">
                                 You agree to indemnify and hold harmless NanTech, its officers, directors, employees, and
                                 affiliates from any claims, liabilities, damages, losses, or expenses arising from:
@@ -135,7 +135,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">8. Privacy</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">8. Privacy</h2>
                             <p>
                                 Your use of the Site is also governed by NanTech’s Privacy Policy, which describes how we
                                 collect and use information. By using the Site, you consent to the practices described in
@@ -144,7 +144,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">9. Modifications to the Terms</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">9. Modifications to the Terms</h2>
                             <p>
                                 NanTech may update these Terms at any time. Changes will be effective upon posting to
                                 the Site. Continued use of the Site after changes are posted constitutes acceptance of the
@@ -153,7 +153,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">10. Governing Law</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">10. Governing Law</h2>
                             <p>
                                 These Terms shall be governed by and construed in accordance with the laws of the
                                 Commonwealth of Virginia, without regard to conflict-of-law principles.
@@ -161,12 +161,12 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">11. Contact Information</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">11. Contact Information</h2>
                             <p className="mb-4">
                                 If you have questions regarding these Terms of Use, please contact:
                             </p>
-                            <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-                                <p className="font-semibold text-white">NanTech Inc.</p>
+                            <div className="bg-foreground/5 p-6 rounded-lg border border-border">
+                                <p className="font-semibold text-foreground">NanTech Inc.</p>
                                 <p>Email: <a href="mailto:info@nantechs.com" className="text-primary hover:underline">info@nantechs.com</a></p>
                                 <p>Website: <a href="https://www.nantechs.com" className="text-primary hover:underline">https://www.nantechs.com</a></p>
                             </div>

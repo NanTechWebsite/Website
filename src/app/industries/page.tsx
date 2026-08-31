@@ -26,7 +26,7 @@ export default function IndustriesPage() {
         {
             title: "Retail & E-Commerce",
             icon: ShoppingBag,
-            desc: "NanTech helps retail and e-commerce organizations build intelligent, scalable digital platforms that adapt to changing customer needs. Through software development, data-driven insights, and delivery leadership, we enable smarter operations, improved customer experiences, and responsible use of AI to drive sustainable growth in a competitive digital marketplace."
+            desc: "NanTech helps retail and e-commerce organizations build intelligent, scalable digital platforms that adapt to changing customer needs. Through process improvement, data-driven insights, and delivery leadership, we enable smarter operations, improved customer experiences, and responsible use of AI to drive sustainable growth in a competitive digital marketplace."
         },
         {
             title: "Education",
@@ -51,7 +51,7 @@ export default function IndustriesPage() {
                             IT Solutions for <span className="text-gradient-primary">Your Business</span>
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12">
-                            NanTech partners with organizations across sectors to design and deliver technology solutions that expand access, build capability, and create lasting impact. Our work bridges software development, program delivery, and responsible AI, informed by our experience building purpose-driven platforms such as MathPi and TrainPi.
+                            NanTech partners with organizations across sectors to design and deliver technology solutions that expand access, build capability, and create lasting impact. Our work bridges process and workflow improvement, program delivery, and responsible AI, informed by our experience building purpose-driven platforms such as MathPi and TrainPi.
                         </p>
 
                         <motion.div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
@@ -74,12 +74,12 @@ export default function IndustriesPage() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                             >
-                                <Card className="h-full border-white/5 bg-white/5 hover:bg-white/10 transition-colors group">
+                                <Card className="h-full border-border bg-card hover:bg-accent/50 transition-colors group">
                                     <CardContent className="p-10">
                                         <div className="mb-6 inline-flex p-4 rounded-xl bg-primary/20 text-primary">
                                             <item.icon className="w-10 h-10" />
                                         </div>
-                                        <h3 className="text-2xl font-bold mb-4 text-white">{item.title}</h3>
+                                        <h3 className="text-2xl font-bold mb-4 text-foreground">{item.title}</h3>
                                         <p className="text-muted-foreground leading-relaxed text-lg">
                                             {item.desc}
                                         </p>

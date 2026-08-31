@@ -32,10 +32,10 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">1. Information We Collect</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">1. Information We Collect</h2>
                             <p className="mb-4">We collect information in limited and appropriate ways, including:</p>
 
-                            <h3 className="text-xl font-semibold text-white mb-2">a. Information You Provide Voluntarily</h3>
+                            <h3 className="text-xl font-semibold text-foreground mb-2">a. Information You Provide Voluntarily</h3>
                             <p className="mb-2">You may provide personal information such as:</p>
                             <ul className="list-disc pl-6 space-y-2 mb-4">
                                 <li>Name</li>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
                             </ul>
                             <p className="mb-4">Providing this information is voluntary.</p>
 
-                            <h3 className="text-xl font-semibold text-white mb-2">b. Information Collected Automatically</h3>
+                            <h3 className="text-xl font-semibold text-foreground mb-2">b. Information Collected Automatically</h3>
                             <p className="mb-2">
                                 When you visit our website, we may automatically collect certain technical information, including:
                             </p>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">2. How We Use Your Information</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">2. How We Use Your Information</h2>
                             <p className="mb-2">NanTech uses collected information to:</p>
                             <ul className="list-disc pl-6 space-y-2 mb-4">
                                 <li>Respond to inquiries and communicate with you</li>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">3. Cookies and Analytics</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">3. Cookies and Analytics</h2>
                             <p className="mb-4">
                                 We may use cookies and similar technologies to support website functionality and analytics.
                                 These tools help us understand how visitors interact with our site so we can improve
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">4. Information Sharing and Disclosure</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">4. Information Sharing and Disclosure</h2>
                             <p className="mb-2">NanTech may share information only in the following limited circumstances:</p>
                             <ul className="list-disc pl-6 space-y-2 mb-4">
                                 <li>
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">5. Data Security</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">5. Data Security</h2>
                             <p className="mb-4">
                                 NanTech implements reasonable administrative, technical, and organizational safeguards
                                 designed to protect information against unauthorized access, disclosure, alteration, or misuse.
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">6. Data Retention</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">6. Data Retention</h2>
                             <p>
                                 We retain personal information only for as long as necessary to fulfill the purposes outlined
                                 in this Privacy Policy, unless a longer retention period is required or permitted by law.
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">7. Your Rights and Choices</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">7. Your Rights and Choices</h2>
                             <p className="mb-2">Depending on your location, you may have the right to:</p>
                             <ul className="list-disc pl-6 space-y-2 mb-4">
                                 <li>Request access to your personal information</li>
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">8. Third-Party Links</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">8. Third-Party Links</h2>
                             <p>
                                 Our website may contain links to third-party websites. NanTech is not responsible for the
                                 privacy practices or content of those external sites. We encourage you to review their
@@ -149,7 +149,7 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">9. Changes to This Privacy Policy</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">9. Changes to This Privacy Policy</h2>
                             <p>
                                 NanTech may update this Privacy Policy from time to time. Updates will be posted on this
                                 page with a revised effective date. Continued use of the website after changes constitutes
@@ -158,13 +158,13 @@ export default function PrivacyPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">10. Contact Us</h2>
+                            <h2 className="text-2xl font-bold text-foreground mb-4">10. Contact Us</h2>
                             <p className="mb-4">
                                 If you have questions or concerns about this Privacy Policy or our data practices, please
                                 contact:
                             </p>
-                            <div className="bg-white/5 p-6 rounded-lg border border-white/10">
-                                <p className="font-semibold text-white">NanTech Inc.</p>
+                            <div className="bg-foreground/5 p-6 rounded-lg border border-border">
+                                <p className="font-semibold text-foreground">NanTech Inc.</p>
                                 <p>Email: <a href="mailto:info@nantechs.com" className="text-primary hover:underline">info@nantechs.com</a></p>
                                 <p>Website: <a href="https://www.nantechs.com" className="text-primary hover:underline">https://www.nantechs.com</a></p>
                             </div>

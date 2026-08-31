@@ -13,8 +13,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "NanTech | Your IT & AI Hub",
-  description: "Empowering businesses with cutting-edge IT infrastructure, Cloud Solutions, and AI-driven analytics.",
+  title: "NanTech | Turning Complex Challenges Into Practical Solutions",
+  description: "NanTech is a mission-driven technology and AI company helping organizations improve operations through process & workflow improvement, project & program management, and responsible AI strategy & solutions.",
 };
 
 export default function RootLayout({

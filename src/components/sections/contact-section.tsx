@@ -42,7 +42,7 @@ export function ContactSection() {
     };
 
     return (
-        <section id="contact" className="py-20 md:py-32 bg-black/30">
+        <section id="contact" className="py-20 md:py-32 bg-muted/30">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                     <div>
@@ -55,7 +55,7 @@ export function ContactSection() {
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-6 h-6 text-primary mt-1" />
                                 <div>
-                                    <h4 className="font-semibold text-white">Address</h4>
+                                    <h4 className="font-semibold text-foreground">Address</h4>
                                     <p className="text-muted-foreground">Reston, Virginia USA
                                     </p>
                                 </div>
@@ -63,7 +63,7 @@ export function ContactSection() {
                             <div className="flex items-start gap-4">
                                 <Mail className="w-6 h-6 text-primary mt-1" />
                                 <div>
-                                    <h4 className="font-semibold text-white">Email</h4>
+                                    <h4 className="font-semibold text-foreground">Email</h4>
                                     <p className="text-muted-foreground">info@nantechs.com</p>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ export function ContactSection() {
                                         name="user_firstname"
                                         id="user_firstname"
                                         required
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                                        className="w-full bg-foreground/5 border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -92,7 +92,7 @@ export function ContactSection() {
                                         name="user_lastname"
                                         id="user_lastname"
                                         required
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                                        className="w-full bg-foreground/5 border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                                     />
                                 </div>
                             </div>
@@ -105,7 +105,7 @@ export function ContactSection() {
                                     id="user_email"
                                     type="email"
                                     required
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                                    className="w-full bg-foreground/5 border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                                 />
                             </div>
                             <div className="space-y-2">
@@ -117,7 +117,7 @@ export function ContactSection() {
                                     id="message"
                                     rows={4}
                                     required
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                                    className="w-full bg-foreground/5 border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                                 />
                             </div>
 

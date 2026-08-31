@@ -149,7 +149,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Comprehensive Services</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              NanTech offers comprehensive IT services that cover every aspect of your technology needs. From network management and cybersecurity to cloud solutions and software development, we provide complete support to ensure your business runs smoothly.
+              NanTech helps organizations solve complex operational and technology challenges through process improvement, program management, and responsible AI. We start by understanding the need, then bring the right combination of expertise and technology to deliver practical, sustainable solutions.
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-bold mb-6">Why Choose <span className="text-primary">NanTech</span>?</h2>
               <div className="text-muted-foreground mb-8 text-lg space-y-4">
                 <p>
-                  NanTech is not a traditional IT vendor. We are a strategic technology and AI partner specializing in software development, project and program management, and AI consulting—helping organizations design, build, and scale intelligent solutions with clarity, accountability, and purpose.
+                  NanTech is not a traditional IT vendor. We are a strategic technology and AI partner specializing in process and workflow improvement, project and program management, and AI strategy and solutions—helping organizations design, build, and scale intelligent solutions with clarity, accountability, and purpose.
                 </p>
                 <p>
                   We bridge the gap between vision and execution, ensuring innovation translates into measurable, real-world outcomes.
@@ -221,17 +221,17 @@ export default function Home() {
                   {
                     id: "01",
                     title: "Purpose-Driven, Tailored Solutions",
-                    desc: "We don’t believe in one-size-fits-all technology. Every engagement is customized around your mission, constraints, and stakeholders—whether we are building custom software, modernizing systems, or guiding AI adoption—so solutions are practical, scalable, and aligned with real-world impact, not hype."
+                    desc: "We don’t believe in one-size-fits-all technology. Every engagement is customized around your mission, constraints, and stakeholders—whether we are improving a workflow, modernizing a program, or guiding AI adoption—so solutions are practical, scalable, and aligned with real-world impact, not hype."
                   },
                   {
                     id: "02",
-                    title: "Execution Excellence Across Software, Programs, and AI",
-                    desc: "Strategy matters—but execution defines success. We combine disciplined project and program management with modern software engineering and AI expertise to take initiatives from concept to production with confidence, speed, and precision. Ideas don’t just stay on paper—they get delivered."
+                    title: "Execution Excellence Across Process, Programs, and AI",
+                    desc: "Strategy matters—but execution defines success. We combine disciplined project and program management with practical process improvement and AI expertise to take initiatives from concept to production with confidence, speed, and precision. Ideas don’t just stay on paper—they get delivered."
                   },
                   {
                     id: "03",
                     title: "Responsible, Human-Centered Technology",
-                    desc: "Innovation without responsibility creates risk. We design and implement software and AI solutions that are ethical, transparent, and people-first—supporting trust, adoption, and long-term sustainability from day one."
+                    desc: "Innovation without responsibility creates risk. We design and implement process and AI solutions that are ethical, transparent, and people-first—supporting trust, adoption, and long-term sustainability from day one."
                   }
                 ].map((item) => (
                   <div key={item.id} className="flex gap-4">
